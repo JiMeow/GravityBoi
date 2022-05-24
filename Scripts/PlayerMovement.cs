@@ -126,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.gameObject.tag == "Lava")
         {
+            Debug.Log("Lava");
             other.gameObject.GetComponent<Lava>().LavaActive();
         }
     }
