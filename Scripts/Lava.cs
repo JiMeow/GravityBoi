@@ -11,7 +11,7 @@ public class Lava : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    IEnumerator Sleep(int seconds)
+    IEnumerator Sleep(int seconds) 
     {
         yield return new WaitForSeconds(seconds);
     }
