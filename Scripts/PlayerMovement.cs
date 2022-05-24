@@ -128,8 +128,12 @@ public class PlayerMovement : MonoBehaviour
         {
             other.gameObject.GetComponent<Lava>().LavaActive();
         }
+        if (other.gameObject.tag == "Npc")
+        {
+            DialogueTrigger dialogueTrigger = other.gameObject.GetComponent<DialogueTrigger>();
+            dialogueTrigger.TriggerDialogue();
+        }
     }
-
 
     IEnumerator Sleep(int seconds)
     {
