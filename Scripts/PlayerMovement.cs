@@ -71,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
         //if player is on the ground and press space, player jump
         if (Input.GetButtonDown("Jump") && isGrounded)
             Jump();
+
+        //Reset the player to the start position
+        isDead();
     }
 
     void MoveForward()
@@ -107,14 +110,26 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void isDead()
+    {
+        if (gameObject.transform.position.x < -26)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Portal")
         {
-            Sleep(2);
             other.gameObject.GetComponent<Portal>().PortalActive();
         }
+        if (other.gameObject.tag == "Lava")
+        {
+            other.gameObject.GetComponent<Lava>().LavaActive();
+        }
     }
+
 
     IEnumerator Sleep(int seconds)
     {

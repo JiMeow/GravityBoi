@@ -8,7 +8,6 @@ public class StageMove : MonoBehaviour
 
     void Update()
     {
-        //move the stage
         transform.Translate(Vector3.left * stageSpeed * Time.deltaTime);
     }
 }
