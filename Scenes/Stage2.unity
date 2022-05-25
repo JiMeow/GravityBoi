@@ -1887,6 +1887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 1
   playerHeight: 1
+  stageMove: {fileID: 0}
 --- !u!70 &422411170
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5497,7 +5498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394885538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.43, y: -0.019999996, z: 0}
+  m_LocalPosition: {x: 85.49, y: -0.09, z: 0}
   m_LocalScale: {x: 1, y: 13.049694, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
