@@ -140,8 +140,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    IEnumerator Sleep(int seconds)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        yield return new WaitForSeconds(seconds);
+        if (other.gameObject.tag == "Blackhole")
+        {
+            other.gameObject.GetComponent<Blackhole>().BlackholeActive();
+        }
     }
 }

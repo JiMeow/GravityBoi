@@ -7,12 +7,11 @@ public class Lava : MonoBehaviour
     // Start is called before the first frame update
     public void LavaActive()
     {
-        Sleep(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Invoke("RestartScene", 0.25f);
     }
 
-    IEnumerator Sleep(int seconds) 
+    void RestartScene()
     {
-        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

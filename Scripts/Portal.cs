@@ -7,18 +7,17 @@ public class Portal : MonoBehaviour
 {
     public void PortalActive()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 4)
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             Application.OpenURL("https://github.com/JiMeow");
-            Sleep(2);
             Application.Quit();
         }
-        Sleep(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            Invoke("GoNextScene", 0.5f);
     }
 
-    IEnumerator Sleep(int seconds)
+    void GoNextScene()
     {
-        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
