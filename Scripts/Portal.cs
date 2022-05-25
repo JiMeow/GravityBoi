@@ -7,7 +7,7 @@ public class Portal : MonoBehaviour
 {
     public void PortalActive()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             Application.OpenURL("https://github.com/JiMeow");
             Sleep(2);

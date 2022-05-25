@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+
+    public StageMove stageMove;
     void Start()
     {
         sentences = new Queue<string>();
@@ -57,6 +59,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("End of conversation.");
         animator.SetBool("IsOpen", false);
+        stageMove.Continue();
     }
 
 }

@@ -8,12 +8,16 @@ public class PlayerMovement : MonoBehaviour
 {
     bool gameTextStart = false;
     bool gameTextStartComplete = false;
+    bool isGrounded;
     public float playerSpeed = 2.0f;
     public float playerHeight = 1.0f;
+
+
+    public StageMove stageMove;
+    private int gravity = 1;
     private Vector3 playerOriginalPosition;
     private Rigidbody2D rb;
-    private int gravity = 1;
-    bool isGrounded;
+
 
 
     Transform startTextTransfrom;
@@ -132,6 +136,7 @@ public class PlayerMovement : MonoBehaviour
         {
             DialogueTrigger dialogueTrigger = other.gameObject.GetComponent<DialogueTrigger>();
             dialogueTrigger.TriggerDialogue();
+            stageMove.Pause();
         }
     }
 

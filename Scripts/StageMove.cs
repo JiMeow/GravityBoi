@@ -10,4 +10,14 @@ public class StageMove : MonoBehaviour
     {
         transform.Translate(Vector3.left * stageSpeed * Time.deltaTime);
     }
+
+    public void Pause()
+    {
+        stageSpeed = 0f;
+    }
+
+    public void Continue()
+    {
+        stageSpeed = 2f;
+    }
 }
