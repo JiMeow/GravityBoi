@@ -1504,7 +1504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065c65bcb44864f976e35ac32f667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackholeIncreaseSpeed: 0.015
+  blackholeIncreaseSpeed: 3
 --- !u!1 &710350708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065c65bcb44864f976e35ac32f667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackholeIncreaseSpeed: 0.001
+  blackholeIncreaseSpeed: 3
 --- !u!1 &824122030
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065c65bcb44864f976e35ac32f667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackholeIncreaseSpeed: 0.006
+  blackholeIncreaseSpeed: 1.2
 --- !u!1 &868391677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,7 +2341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065c65bcb44864f976e35ac32f667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackholeIncreaseSpeed: 0.005
+  blackholeIncreaseSpeed: 1
 --- !u!1 &992186582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065c65bcb44864f976e35ac32f667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackholeIncreaseSpeed: 0.01
+  blackholeIncreaseSpeed: 1.5
 --- !u!58 &1068945292
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3970,7 +3970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065c65bcb44864f976e35ac32f667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackholeIncreaseSpeed: 0.01
+  blackholeIncreaseSpeed: 2
 --- !u!1 &1790396216
 GameObject:
   m_ObjectHideFlags: 0

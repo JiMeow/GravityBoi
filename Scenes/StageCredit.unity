@@ -1209,7 +1209,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stage3
+  m_Text: Thanks
 --- !u!222 &996274377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1384,6 +1384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 1
   playerHeight: 1
+  stageMove: {fileID: 0}
 --- !u!70 &1087980838
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1538,7 +1539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thank For Playing.
+  m_Text: Thanks For Playing.
 --- !u!222 &1131135370
 CanvasRenderer:
   m_ObjectHideFlags: 0

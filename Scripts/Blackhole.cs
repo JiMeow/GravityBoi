@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Blackhole : MonoBehaviour
 {
-    public float blackholeIncreaseSpeed = 0.01f;
+    public float blackholeIncreaseSpeed = 2f;
     void Update()
     {
         Scaling();
@@ -22,11 +22,11 @@ public class Blackhole : MonoBehaviour
             }
             if (increse)
             {
-                GetComponent<Transform>().localScale += new Vector3(blackholeIncreaseSpeed, blackholeIncreaseSpeed, blackholeIncreaseSpeed);
+                GetComponent<Transform>().localScale += new Vector3(blackholeIncreaseSpeed * Time.deltaTime, blackholeIncreaseSpeed * Time.deltaTime, blackholeIncreaseSpeed * Time.deltaTime);
             }
             else
             {
-                GetComponent<Transform>().localScale -= new Vector3(blackholeIncreaseSpeed, blackholeIncreaseSpeed, blackholeIncreaseSpeed);
+                GetComponent<Transform>().localScale -= new Vector3(blackholeIncreaseSpeed * Time.deltaTime, blackholeIncreaseSpeed * Time.deltaTime, blackholeIncreaseSpeed * Time.deltaTime);
             }
         }
     }
