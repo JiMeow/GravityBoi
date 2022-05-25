@@ -953,7 +953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391301713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.73, y: -4.2, z: 0}
+  m_LocalPosition: {x: -13.7, y: 8.93, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -977,9 +977,8 @@ MonoBehaviour:
     names: JiMeow Dev
     sentence:
     - Hello I am JiMeow, developer of this game.  From last time I promise to give
-      information.
-    - No, I doesn't have any information now but next time we found I promise I will
-      give information for sure.
+      information.   .   .   .
+    - 'Next part you will found new wall type. Wall will have arrow to '
     - So I think you can go now good luck and enjoy my boi.
 --- !u!50 &391301716
 Rigidbody2D:
