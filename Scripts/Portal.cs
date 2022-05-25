@@ -9,7 +9,7 @@ public class Portal : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
-            Application.OpenURL("https://github.com/JiMeow");
+            Application.OpenURL("https://github.com/JiMeow/GravityBoi");
             Application.Quit();
         }
         else
